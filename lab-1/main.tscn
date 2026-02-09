@@ -2,13 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://c2vsgyshhcy62" path="res://Pictures/9-2-kitten-png-clipart.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://b3wkfydsp2uft" path="res://icon.svg" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://4ecgbqfdno42" path="res://tree.tscn" id="3_h2yge"]
 
 [node name="Node2D" type="Node2D" unique_id=1702837267]
 position = Vector2(76, 100)
 rotation = -0.038397245
 
 [node name="SadKitty" type="Sprite2D" parent="." unique_id=160742320]
-position = Vector2(682.88873, 198.36081)
+position = Vector2(727.93585, 276.1474)
 scale = Vector2(1.2919531, 1.2919531)
 texture = ExtResource("1_0xm2m")
 
@@ -18,10 +19,23 @@ scale = Vector2(0.32397956, 0.32397956)
 texture = ExtResource("1_0xm2m")
 
 [node name="Robot" type="Sprite2D" parent="." unique_id=1072744016]
-position = Vector2(129.10039, 78.01338)
+position = Vector2(-4.785492, 411.11932)
 texture = ExtResource("2_h2yge")
 
 [node name="EvilRobot" type="Sprite2D" parent="Robot" unique_id=513091610]
 modulate = Color(1, 0.19607843, 0.09019608, 1)
-position = Vector2(-38.50232, 168.64621)
+position = Vector2(122.718575, 35.737213)
 texture = ExtResource("2_h2yge")
+
+[node name="BigTree" parent="." unique_id=1097440797 instance=ExtResource("3_h2yge")]
+offset_left = 43.955795
+offset_top = -258.50317
+offset_right = 148.95576
+offset_bottom = -186.50314
+scale = Vector2(5, 5)
+
+[node name="Little" parent="." unique_id=709896894 instance=ExtResource("3_h2yge")]
+offset_left = -50.45393
+offset_top = 193.2056
+offset_right = 54.54607
+offset_bottom = 265.20563
